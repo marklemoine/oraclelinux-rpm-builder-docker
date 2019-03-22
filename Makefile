@@ -11,7 +11,7 @@ test_ol7:
 	docker run --rm \
 		-v ${PWD}/tests/:/rpmbuild/SOURCES/ \
 		-v ${PWD}/_dist_ol7:/rpmbuild/ \
-		marklemoine/marklemoine/oraclelinux7-rpm-builder build-spec /rpmbuild/SOURCES/test1.spec
+		marklemoine/oraclelinux7-rpm-builder build-spec /rpmbuild/SOURCES/test1.spec
 
 clean:
 	rm -rf _dist
